@@ -2,39 +2,43 @@
     <head>
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="main-body">
-            <div class="btn" id="display"></div>
+            <div class="btn" id="display">
+                <div id="lastOperation"></div>
+                <div id="currentVal"></div>
+            </div>
             
-            <div class="btn">M+</div>
-            <div class="btn">M-</div>
-            <div class="btn">MR</div>
-            <div class="btn">MC</div>
+            <div class="btn" onclick="function1()">M+</div>
+            <div class="btn" onclick="function1()">M-</div>
+            <div class="btn" onclick="function1()">MR</div>
+            <div class="btn" onclick="function1()">MC</div>
 
-            <div class="btn" id="num">7</div>
-            <div class="btn" id="num">8</div>
-            <div class="btn" id="num">9</div>
-            <div class="btn">+</div>
+            <div class="btn" id="num" onclick="num(7)">7</div>
+            <div class="btn" id="num" onclick="num(8)">8</div>
+            <div class="btn" id="num" onclick="num(9)">9</div>
+            <div class="btn" onclick="operator('+')">+</div>
  
-            <div class="btn" id="num">4</div>
-            <div class="btn" id="num">5</div>
-            <div class="btn" id="num">6</div>
-            <div class="btn">-</div>
+            <div class="btn" id="num" onclick="num(4)">4</div>
+            <div class="btn" id="num" onclick="num(5)">5</div>
+            <div class="btn" id="num" onclick="num(6)">6</div>
+            <div class="btn" onclick="operator('-')">-</div>
 
-            <div class="btn" id="num">1</div>
-            <div class="btn" id="num">2</div>
-            <div class="btn" id="num">3</div>
-            <div class="btn">X</div>
+            <div class="btn" id="num" onclick="num(1)">1</div>
+            <div class="btn" id="num" onclick="num(2)">2</div>
+            <div class="btn" id="num" onclick="num(3)">3</div>
+            <div class="btn" onclick="operator('X')">X</div>
 
             <div class="btn">AC</div>
-            <div class="btn" id="num">0</div>
+            <div class="btn" id="num" onclick="num(0)">0</div>
             <div class="btn" id="num">.</div>
-            <div class="btn">/</div>
+            <div class="btn" onclick="operator('/')">/</div>
 
-            <div class="btn">%</div>
-            <div class="btn">^</div>
-            <div class="btn" id="eq">=</div>
+            <div class="btn" onclick="operator('%')">%</div>
+            <div class="btn" onclick="operator('^')">^</div>
+            <div class="btn" id="eq" onclick="operator('=')">=</div>
         </div>
     </body>
 </html>
